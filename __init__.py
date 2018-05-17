@@ -62,7 +62,7 @@ class SingingSkill(MycroftSkill):
         except Exception as e:
             self.log.error("Error: {0}".format(e))
 
-    def create_song(path):
+    def create_song(self,path):
         # Create and load audio
         # TODO: use tmp file instead of main.wav
         tmp_voice_file = "/tmp/main.wav"
